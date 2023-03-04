@@ -1,9 +1,6 @@
 plugins {
     id("com.android.application")
-    id(
-        "org.jetbrains.kotlin.an" +
-                "droid"
-    )
+    id("org.jetbrains.kotlin.android")
     id("kotlin-kapt")
     id("com.google.dagger.hilt.android")
 
@@ -49,4 +46,8 @@ dependencies {
 
     implementation(Hilt.daggerHilt)
     kapt(Hilt.hiltCompiler)
+
+    implementation(Retrofit.retrofit)
+    implementation(Retrofit.gson)
+    implementation(Retrofit.loggingInterceptor)
 }

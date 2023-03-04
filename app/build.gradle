@@ -65,4 +65,8 @@ dependencies {
 
     implementation(Hilt.daggerHilt)
     kapt(Hilt.hiltCompiler)
+
+    implementation(Retrofit.retrofit)
+    implementation(Retrofit.gson)
+    implementation(Retrofit.loggingInterceptor)
 }
