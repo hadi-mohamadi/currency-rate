@@ -49,6 +49,8 @@ dependencies {
     debugImplementation(AndroidX.composeUiTooling)
     debugImplementation(AndroidX.composeTestManifest)
 
+    implementation(Coroutines.coroutines)
+
     implementation(Hilt.daggerHilt)
     kapt(Hilt.hiltCompiler)
 
