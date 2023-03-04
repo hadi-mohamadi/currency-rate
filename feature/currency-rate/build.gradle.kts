@@ -55,4 +55,7 @@ dependencies {
     implementation(Retrofit.retrofit)
     implementation(Retrofit.gson)
     implementation(Retrofit.loggingInterceptor)
+
+    testImplementation(Mockk.mockk)
+    androidTestImplementation(Mockk.androidMockk)
 }
