@@ -1,6 +1,8 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+    id 'com.google.dagger.hilt.android'
 }
 
 android {
@@ -60,4 +62,7 @@ dependencies {
     androidTestImplementation(AndroidX.composeUiTestJUnit)
     debugImplementation(AndroidX.composeUiTooling)
     debugImplementation(AndroidX.composeTestManifest)
+
+    implementation(Hilt.daggerHilt)
+    kapt(Hilt.hiltCompiler)
 }
