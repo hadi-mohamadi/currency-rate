@@ -1,4 +1,4 @@
-package com.example.currency_rate.data.dto.source.remote
+package com.example.currency_rate.data.source.remote
 
 import com.example.currency_rate.data.dto.RateDto
 import retrofit2.http.GET

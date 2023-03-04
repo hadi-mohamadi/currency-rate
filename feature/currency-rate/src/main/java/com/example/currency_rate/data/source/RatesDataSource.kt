@@ -1,4 +1,4 @@
-package com.example.currency_rate.data.dto.source
+package com.example.currency_rate.data.source
 
 import com.example.currency_rate.data.dto.RateDto
 

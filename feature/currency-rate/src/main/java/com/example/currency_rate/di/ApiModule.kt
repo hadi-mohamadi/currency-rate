@@ -1,6 +1,6 @@
 package com.example.currency_rate.di
 
-import com.example.currency_rate.data.dto.source.remote.RatesApi
+import com.example.currency_rate.data.source.remote.RatesApi
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
