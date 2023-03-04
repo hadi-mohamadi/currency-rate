@@ -50,6 +50,8 @@ android {
 
 dependencies {
 
+    implementation(project(Modules.featureCurrencyRate))
+
     implementation(AndroidX.coreKtx)
     implementation(AndroidX.lifecycleRuntime)
     implementation(AndroidX.activityCompose)
@@ -66,7 +68,4 @@ dependencies {
     implementation(Hilt.daggerHilt)
     kapt(Hilt.hiltCompiler)
 
-    implementation(Retrofit.retrofit)
-    implementation(Retrofit.gson)
-    implementation(Retrofit.loggingInterceptor)
 }

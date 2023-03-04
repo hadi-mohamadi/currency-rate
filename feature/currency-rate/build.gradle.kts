@@ -3,20 +3,16 @@ plugins {
     id("org.jetbrains.kotlin.android")
     id("kotlin-kapt")
     id("com.google.dagger.hilt.android")
-
 }
 
 android {
-    namespace = "com.example.core_network"
+    namespace = "com.example.currency_rate"
     compileSdk = 33
-
     defaultConfig {
         minSdk = 23
         targetSdk = 33
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-
-        buildConfigField("String", "BASE_API", "\"https://lokomond.com/\"")
     }
 
     buildTypes {
@@ -39,9 +35,19 @@ android {
 
 dependencies {
 
+    implementation(project(Modules.coreNetwork))
+
     implementation(AndroidX.coreKtx)
+    implementation(AndroidX.lifecycleRuntime)
+    implementation(AndroidX.composeUi)
+    implementation(AndroidX.composeUiToolingPreview)
+    implementation(AndroidX.composeMaterial)
     testImplementation(JUnit.junit)
     androidTestImplementation(AndroidX.testJUnit)
+    androidTestImplementation(AndroidX.testEspresso)
+    androidTestImplementation(AndroidX.composeUiTestJUnit)
+    debugImplementation(AndroidX.composeUiTooling)
+    debugImplementation(AndroidX.composeTestManifest)
 
     implementation(Hilt.daggerHilt)
     kapt(Hilt.hiltCompiler)

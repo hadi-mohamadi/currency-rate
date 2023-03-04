@@ -15,3 +15,4 @@ dependencyResolutionManagement {
 rootProject.name = "Currency Rate"
 include ':app'
 include ':core:core-network'
+include ':feature:currency-rate'
