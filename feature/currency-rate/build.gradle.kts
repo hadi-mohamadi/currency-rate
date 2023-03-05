@@ -39,6 +39,7 @@ dependencies {
 
     implementation(AndroidX.coreKtx)
     implementation(AndroidX.lifecycleRuntime)
+    implementation(AndroidX.lifecycleViewModel)
     implementation(AndroidX.composeUi)
     implementation(AndroidX.composeUiToolingPreview)
     implementation(AndroidX.composeMaterial)

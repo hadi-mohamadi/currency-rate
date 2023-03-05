@@ -4,6 +4,7 @@ object AndroidX {
 
     const val coreKtx = "androidx.core:core-ktx:1.9.0"
     const val lifecycleRuntime = "androidx.lifecycle:lifecycle-runtime-ktx:2.5.1"
+    const val lifecycleViewModel = "androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0"
     const val activityCompose = "androidx.activity:activity-compose:1.6.1"
     const val composeUi = "androidx.compose.ui:ui:$composeVersion"
     const val composeUiToolingPreview = "androidx.compose.ui:ui-tooling-preview:$composeVersion"

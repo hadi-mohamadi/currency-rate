@@ -1,8 +1,8 @@
 package com.example.currency_rate.di
 
 import com.example.currency_rate.domain.RateRepository
-import com.example.currency_rate.usecase.GetRates
-import com.example.currency_rate.usecase.GetRatesImpl
+import com.example.currency_rate.usecase.GetRatesUseCase
+import com.example.currency_rate.usecase.GetRatesUseCaseImpl
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -15,7 +15,7 @@ class UseCaseModule {
 
     @Provides
     @Singleton
-    fun provideGetRates(rateRepository: RateRepository): GetRates {
-        return GetRatesImpl(rateRepository)
+    fun provideGetRates(rateRepository: RateRepository): GetRatesUseCase {
+        return GetRatesUseCaseImpl(rateRepository)
     }
 }
