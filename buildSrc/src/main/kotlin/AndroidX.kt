@@ -14,4 +14,6 @@ object AndroidX {
     const val composeUiTestJUnit = "androidx.compose.ui:ui-test-junit4:$composeVersion"
     const val composeUiTooling = "androidx.compose.ui:ui-tooling:$composeVersion"
     const val composeTestManifest = "androidx.compose.ui:ui-test-manifest:$composeVersion"
+    const val navigationCompose = "androidx.navigation:navigation-compose:2.5.3"
+    const val hiltNavigationCompose = "androidx.hilt:hilt-navigation-compose:1.1.0-alpha01"
 }

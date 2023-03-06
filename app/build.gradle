@@ -64,6 +64,8 @@ dependencies {
     androidTestImplementation(AndroidX.composeUiTestJUnit)
     debugImplementation(AndroidX.composeUiTooling)
     debugImplementation(AndroidX.composeTestManifest)
+    implementation(AndroidX.navigationCompose)
+    implementation(AndroidX.hiltNavigationCompose)
 
     implementation(Hilt.daggerHilt)
     kapt(Hilt.hiltCompiler)
