@@ -1,5 +1,7 @@
 package com.example.currency_rate.di
 
+import com.example.currency_rate.domain.mapper.ExceptionMapper
+import com.example.currency_rate.domain.mapper.ExceptionMapperImpl
 import com.example.currency_rate.domain.mapper.RateMapper
 import com.example.currency_rate.domain.mapper.RateMapperImpl
 import dagger.Module
@@ -16,5 +18,11 @@ class MapperModule {
     @Singleton
     fun provideRateMapper(): RateMapper {
         return RateMapperImpl()
+    }
+
+    @Provides
+    @Singleton
+    fun provideExceptionMapper(): ExceptionMapper {
+        return ExceptionMapperImpl()
     }
 }
