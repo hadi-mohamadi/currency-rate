@@ -1,9 +1,9 @@
 package com.example.currency_rate
 
 import com.example.currency_rate.domain.model.Rate
-import com.example.currency_rate.presentation.FormattedRateModel
-import com.example.currency_rate.presentation.RateListViewModel
-import com.example.currency_rate.presentation.UiState
+import com.example.currency_rate.presentation.ratelist.FormattedRateModel
+import com.example.currency_rate.presentation.ratelist.RateListViewModel
+import com.example.currency_rate.presentation.ratelist.UiState
 import com.example.currency_rate.presentation.util.Time
 import com.example.currency_rate.presentation.util.Timer
 import com.example.currency_rate.usecase.GetRatesUseCase

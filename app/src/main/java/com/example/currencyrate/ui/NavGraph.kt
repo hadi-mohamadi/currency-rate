@@ -5,6 +5,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.example.currency_rate.presentation.ratelist.RateListScreen
 import com.example.currencyrate.ui.Destinations.LIST_ROUTE
 
 object Destinations {
@@ -19,6 +20,6 @@ fun NavGraph(
 
     NavHost(navController = navController, startDestination = startDestination) {
 
-        composable(LIST_ROUTE){}
+        composable(LIST_ROUTE) { RateListScreen() }
     }
 }

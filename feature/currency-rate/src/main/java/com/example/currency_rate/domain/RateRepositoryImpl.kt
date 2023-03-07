@@ -9,6 +9,6 @@ class RateRepositoryImpl(
     private val ratesDataSource: RatesDataSource
 ) : RateRepository {
     override suspend fun getRates(): List<Rate> {
-        return rateMapper.mapToDomainModelList(ratesDataSource.getRates())
+        return rateMapper.mapToDomainModelList(ratesDataSource.getRates().rates)
     }
 }

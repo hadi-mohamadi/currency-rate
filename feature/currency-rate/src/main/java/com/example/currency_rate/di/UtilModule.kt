@@ -1,5 +1,6 @@
 package com.example.currency_rate.di
 
+import com.example.currency_rate.presentation.util.Time
 import com.example.currency_rate.presentation.util.TimeImpl
 import com.example.currency_rate.presentation.util.Timer
 import com.example.currency_rate.presentation.util.TimerImpl
@@ -21,7 +22,7 @@ class UtilModule {
 
     @Provides
     @Singleton
-    fun provideTime(): TimeImpl {
+    fun provideTime(): Time {
         return TimeImpl()
     }
 }

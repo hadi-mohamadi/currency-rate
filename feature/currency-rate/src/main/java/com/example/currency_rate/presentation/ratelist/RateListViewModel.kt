@@ -1,4 +1,4 @@
-package com.example.currency_rate.presentation
+package com.example.currency_rate.presentation.ratelist
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -12,7 +12,6 @@ import kotlinx.coroutines.launch
 import java.text.SimpleDateFormat
 import java.util.*
 import javax.inject.Inject
-import kotlin.math.roundToInt
 
 data class FormattedRateModel(val symbol: String, val price: Double, val changeState: Int)
 
@@ -35,7 +34,7 @@ class RateListViewModel @Inject constructor(
         UiState(
             rateList = null,
             lastUpdateTime = null,
-            isLoading = false,
+            isLoading = true,
             error = null
         )
     )
@@ -64,7 +63,7 @@ class RateListViewModel @Inject constructor(
                 rateList = null,
                 lastUpdateTime = null,
                 isLoading = false,
-                error = it.cause?.message
+                error = it.message
             )
         }
     }
